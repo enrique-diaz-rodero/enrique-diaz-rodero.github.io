@@ -1,0 +1,16 @@
+¿Y ahora qué? Tu flujo de trabajo diario
+A partir de ahora, este será tu ciclo de vida como programador:
+
+Abres VS Code y modificas tu index.html, style.css o script.js (por ejemplo, añades una sección de "Proyectos").
+
+Guardas los archivos (Ctrl + S).
+
+Vas al panel de "Source Control" (el icono del enchufe).
+
+Escribes un mensaje en la cajita (ej: Añadida sección de proyectos).
+
+Le das a la palomita (✓) para hacer Commit.
+
+Le das al botón azul de "Sync Changes" (o Push) para subirlo a GitHub.
+
+Magia: En 1 minuto, tu página web https://enrique-diaz-rodero.github.io se habrá actualizado sola con los nuevos cambios.
