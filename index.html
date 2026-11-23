@@ -46,7 +46,7 @@
         <section id="experiencia">
             <h2>Experiencia</h2>
             <article first-job>
-                <p>Próximamente...</p>
+                <p>Próximamente... (En este sector)</p>
             </article>
         </section>
 
@@ -244,8 +244,82 @@
         </section>
 
         <section id="proyectos">
-            <h2>Proyectos</h2> <!-- Es un proyecto de otra persona pero lo he cogido como ejemplo -->
-            <p>Añadir proyecto ficticio</p>
+            <h2>Proyectos</h2>
+
+            <!-- Botones de filtro por tecnología -->
+            <div class="filtros">
+                <button data-filtro="all" class="activo">Todos</button>
+                <button data-filtro="html">HTML</button>
+                <button data-filtro="css">CSS</button>
+                <button data-filtro="javascript">JavaScript</button>
+                <button data-filtro="kotlin">Kotlin</button>
+            </div>
+
+            <!-- Contenedor de proyectos -->
+            <div class="lista-proyectos">
+
+                <!-- PROYECTO: PORTAFOLIO -->
+                <article class="proyecto" data-tecnologias="html css javascript">
+                    <h3>Portafolio Personal</h3>
+
+                    <p class="proyecto-descripcion">
+                        Portafolio web personal desarrollado desde cero con HTML5, CSS3 y JavaScript. 
+                        Implementa un diseño responsivo, estructura semántica y un sistema de filtrado dinámico para 
+                        explorar habilidades, certificaciones y proyectos de forma interactiva.
+                    </p>
+
+                    <!-- Etiquetas visuales de tecnologías -->
+                    <ul class="proyecto-tags">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+
+                    <!-- Enlaces -->
+                    <div class="proyecto-enlaces">
+                        <a href="https://github.com/enrique-diaz-rodero/enrique-diaz-rodero.github.io" target="_blank"
+                            rel="noopener noreferrer" class="btn-codigo">
+                            Ver Código
+                        </a>
+                        <a href="https://enrique-diaz-rodero.github.io/" target="_blank" rel="noopener noreferrer"
+                            class="btn-demo">
+                            Ver Demo
+                        </a>
+                    </div>
+                </article>
+
+                <article class="proyecto" data-tecnologias="kotlin">
+                    <h3>APP: Lista de la compra</h3>
+
+                    <p class="proyecto-descripcion">
+                        Lista de la Compra Colaborativa es una aplicación Android nativa desarrollada con Kotlin y Jetpack Compose 
+                        que permite gestionar listas de la compra de forma compartida en tiempo real.
+                        La app integra Firebase para la autenticación y sincronización de datos entre dispositivos, 
+                        e implementa una arquitectura MVVM con Clean Architecture e inyección de dependencias con Hilt.
+                        <br>
+
+                        Entre sus funcionalidades destacan la búsqueda inteligente de productos mediante las APIs de Open Food Facts 
+                        y Open Prices (con caché local), un sistema de auto-clasificación de productos en 15 categorías y 
+                        la gestión de miembros en listas compartidas. Todo el proyecto está construido siguiendo las buenas prácticas de 
+                        desarrollo Android moderno, incluyendo Coroutines y Flow para la asincronía y DataStore para las 
+                        preferencias locales
+                    </p>
+
+                    <!-- Etiquetas visuales de tecnologías -->
+                    <ul class="proyecto-tags">
+                        <li>Kotlin</li>
+                    </ul>
+
+                    <!-- Enlaces -->
+                    <div class="proyecto-enlaces">
+                        <a href="https://github.com/enrique-diaz-rodero/listaCompra" target="_blank"
+                            rel="noopener noreferrer" class="btn-codigo">
+                            Ver Código
+                        </a>
+                    </div>
+                </article>
+
+            </div>
         </section>
 
         <section id="contacto">

@@ -379,6 +379,101 @@ details.certificacion[open] summary::after {
     border: 1px dashed #cbd5e0;
     text-align: center;
 }
+/* ===== SECCIÓN PROYECTOS ===== */
+
+.lista-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Se adapta a la pantalla */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.proyecto {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.proyecto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.proyecto h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.proyecto-descripcion {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Para que las tarjetas se estiren igual */
+}
+
+/* Las etiquetas de tecnología (reutilizamos el estilo de certificaciones) */
+.proyecto-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.proyecto-tags li {
+    background: #eef2ff;
+    color: #4f46e5;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Los enlaces (Botones) */
+.proyecto-enlaces {
+    display: flex;
+    gap: 10px;
+}
+
+.proyecto-enlaces a {
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+}
+
+/* Botón de Código (Secundario) */
+.btn-codigo {
+    background: #ffffff;
+    color: #333;
+    border: 1px solid #d1d5db;
+}
+
+.btn-codigo:hover {
+    background: #f3f4f6;
+    border-color: #9ca3af;
+}
+
+/* Botón de Demo (Primario) */
+.btn-demo {
+    background: #0d6efd;
+    color: #ffffff;
+    border: 1px solid #0d6efd;
+}
+
+.btn-demo:hover {
+    background: #0b5ed7;
+}
 
 /* ==============================
    CONTACTO
